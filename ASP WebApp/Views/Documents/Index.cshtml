@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ASP_WebApp.Models.Document>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Documents</h1>
+
+<form asp-controller="Flights" asp-action="Index">
+    <button type="submit">Flights</button>
+</form>
+<form asp-controller="Hotels" asp-action="Index">
+    <button type="submit">Hotels</button>
+</form>
+<form asp-controller="Documents" asp-action="DeleteReservations">
+    <button type="submit">Delete Reservations</button>
+</form>
+
